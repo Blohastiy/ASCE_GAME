@@ -28,68 +28,61 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    width: 20vw;
-    height: 50vh;
+    justify-content: center;
+    width: 320px; /* Фиксированная компактная ширина */
+    max-width: 90vw; /* Чтобы на совсем узких экранах не вылезало */
+    padding: 25px 20px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border-radius: 5vh;
-    border: none;
-    user-select: none;
-}
-.telegram {
-    width: 10vw;
     -webkit-backdrop-filter: blur(10px);
-    height: 5vh;
-    border-radius: 1vh;
-    border: none;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Делаем ВСЕ кнопки внутри формы одинаковыми по ширине и стилю */
+.form a, .form button, .telegram {
+    width: 100%;
+    max-width: 260px; /* Одинаковая ширина для всех кнопок */
+    height: 45px;
     background-color: rgba(30, 144, 255, 0.3);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-bottom: 1vh;
-    color: white;
-}
-.github {
-    width: 10vw;
     -webkit-backdrop-filter: blur(10px);
-    height: 5vh;
-    border-radius: 1vh;
-    border: none;
-    background-color: rgba(30, 144, 255, 0.3);
-    backdrop-filter: blur(10px);
+    border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-bottom: 1vh;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     color: white;
-}
-.channel {
-    width: 10vw;
-    -webkit-backdrop-filter: blur(10px);
-    height: 5vh;
-    border-radius: 1vh;
-    border: none;
-    background-color: rgba(30, 144, 255, 0.3);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-bottom: 1vh;
-    color: white;
+    text-decoration: none;
 }
 .info {
-    width: 10vw;
-    -webkit-backdrop-filter: blur(10px);
-    height: 5vh;
-    border-radius: 1vh;
-    border: none;
+    width: 100%; /* Кнопка на всю ширину формы */
+    height: 50px; /* Фиксированная удобная высота */
     background-color: rgba(30, 144, 255, 0.3);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-bottom: 1vh;
-    color: white;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    user-select: none;
 }
 img {
     border-radius: 20px;
-    width: 10vw;
-    height: 20vh;
-    margin-bottom: 3vh;
+    width: 120px;  /* Фиксированная ширина в пикселях */
+    height: 120px; /* Фиксированная высота в пикселях (квадрат) */
+    object-fit: cover; /* Обрезает картинку, сохраняя пропорции */
+    margin-bottom: 15px;
 }
 .model {
     display: none;
