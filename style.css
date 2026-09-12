@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.Background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.Background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20vw;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 5vh;
+    border: none;
+    user-select: none;
+}
+.telegram {
+    width: 10vw;
+    -webkit-backdrop-filter: blur(10px);
+    height: 5vh;
+    border-radius: 1vh;
+    border: none;
+    background-color: rgba(30, 144, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 1vh;
+    color: white;
+}
+.github {
+    width: 10vw;
+    -webkit-backdrop-filter: blur(10px);
+    height: 5vh;
+    border-radius: 1vh;
+    border: none;
+    background-color: rgba(30, 144, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 1vh;
+    color: white;
+}
+.channel {
+    width: 10vw;
+    -webkit-backdrop-filter: blur(10px);
+    height: 5vh;
+    border-radius: 1vh;
+    border: none;
+    background-color: rgba(30, 144, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 1vh;
+    color: white;
+}
+.info {
+    width: 10vw;
+    -webkit-backdrop-filter: blur(10px);
+    height: 5vh;
+    border-radius: 1vh;
+    border: none;
+    background-color: rgba(30, 144, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 1vh;
+    color: white;
+}
+img {
+    border-radius: 20px;
+    width: 10vw;
+    height: 20vh;
+    margin-bottom: 3vh;
+}
+.model {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.model.active {
+    display: flex;
+}
+.model-conent {
+    background-color: rgba(80, 80, 80, 0.7);
+    padding: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 300px;
+    word-break: break-word;
+}
+
